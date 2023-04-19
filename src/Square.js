@@ -1,13 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-const Square = ({value}) => {
+const Square = ({value, onSquareClick}) => {
 
-  const handleClick = () => {
-    console.log('clicked')
-  }  
+ 
 
+ 
   return (
- <button className="square" onClick={handleClick}>{value}</button>
+ <button className="square" onClick={onSquareClick}>{value}</button>
   )
 }
 
